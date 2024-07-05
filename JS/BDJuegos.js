@@ -150,39 +150,22 @@ const Juegos = [
       description: "Sandbox, Aventura",
     },
   ];
+  document.addEventListener("DOMContentLoaded", () => {
+    const juegosContainer = document.getElementById("catalogo-Juegos");
   
-  function mostrarJuegos(){
-    const games = document.getElementById('catalogo-Juegos');
-    Juegos.forEach (Juego => {
-        const divJuego = document.createElement('div');
-        div.classList.add('Product'); 
-        
-        const ImgJuego = document.createElement('img');
-        ImgJuego.src = Juego.image;
-        ImgJuego.alt = Juego.title;
-
-        const h3Juego = document.createElement('h3')
-        h3Juego.textContent = Juego.title;
-
-        const pJuego = document.createElement('p');
-        pJuego.textContent = Juego.description;
-
-        divJuego.appendChild(ImgJuego);
-        divJuego.appendChild(h3Juego);
-        divJuego.appendChild(pJuego);
-
-        games.appendChild(divJuego);
-    
-  });
-}
-
-document.addEventListener('DOMContentLoaded', mostrarJuegos);
-
-function toggleMenu(){
-    const menu = document.querySelector('.navbar .menu');
-    menu.classList.toggle('active');
-}
-
+    Juegos.forEach(juego => {
+      const divjuego = document.createElement("div");
+      divjuego.classList.add("product");
+  
+      divjuego.innerHTML = `
+                <img src="${juego.image}" alt="${juego.title}">
+                <h2>${juego.title}</h2>
+                <p>${juego.description}</p>`;
+  
+      juegosContainer.appendChild(divjuego);
+    });
+});
+  
 function showContactPopup(){
     event.preventDefault();
         document.getElementById('contact-popup').style.display = 'block';
