@@ -1,0 +1,198 @@
+*{
+    padding: 0%;
+    font-family: Arial, sans-serif;
+}
+.header {
+    
+    background-color: #222;
+    color: lightblue;
+    padding:  10px 0;
+    text-align: center;
+  }
+ 
+  #carouselExampleAutoplaying{
+    width: 100%;
+  }
+  
+  #carouselExampleAutoplaying:hover{
+    width: 100%;
+    box-shadow: 0 40px 40px rgba(3, 0, 167, 0.3);
+  }
+
+.menu{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    background-color: #222;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    padding: 10px 0;
+}
+
+.texto_carousel{
+
+    font-size:large;
+    padding: 10px; 
+    font-style: oblique;
+    color: darkblue;
+  
+}
+.container_h2{
+    text-align: center;
+    padding: 0 600px ;
+   
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.container{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+.navbar .menu.active{
+    display: flex;
+}
+.navbar .toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.toggle{
+    display: none;
+    font-size: 28px;
+    color: black;
+}
+
+.navbar .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    border-left:1px solid ;
+    border-right: 1px solid;
+}
+
+@media (max-width: 600px){
+    .navbar .menu{
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .navbar .menu.active{
+        display: flex;
+    }
+    .navbar .menu a{
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+    .navbar .toggle{
+        display: block;
+        display: pointer;
+    }
+}
+
+header {
+    background-color: #222;
+    color: lightblue;
+    padding: AUTO;
+    margin: 2%;
+    text-align: center;
+    width: 100%;
+  }
+ 
+.container-Juegos{
+    display: flex;
+    padding: 20px;
+}
+
+.producto{
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content{
+    position: relative;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.popup .close:hover{
+    color: black;
+}
